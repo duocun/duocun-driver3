@@ -1,0 +1,8 @@
+{
+  "name": "duocun-staff",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
