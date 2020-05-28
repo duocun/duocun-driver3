@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  api: "http://localhost:8000/api",
+  media: "https://duocun.com.cn/media/",
   storageKey: {
     auth: "DUOCUN-STAFF-AUTH-TOKEN",
     lang: "DUOCUN-STAFF-I18N"
