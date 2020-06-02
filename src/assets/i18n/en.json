@@ -2,5 +2,10 @@
   "Pickup": "Pickup",
   "Map": "Map",
   "Merchant": "Merchant",
-  "My Account": "My Account"
+  "My Account": "My Account",
+  "Login": "Login",
+  "Username": "Username",
+  "Password": "Password",
+  "Register": "Register",
+  "Password Confirm": "Password Confirm"
 }

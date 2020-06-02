@@ -35,13 +35,12 @@ export class AuthService {
     return new Promise<AccountInterface>((resolve) => {
       this.http
         .get(`${environment.api}/Accounts/current?tokenId=${token}`)
-        .subscribe((resp: { code: string; data: AccountInterface }) => {
-          if (resp.code === "success") {
-            this.account = resp.data;
+        .subscribe((data: any) => {
+          this.account = data;
             if (this.account && this.account.type === "driver") {
               this.storage.set(environment.storageKey.auth, token).then(() => {
                 this.account$.next(this.account);
-                resolve(resp.data);
+                resolve(data);
               });
             } else {
               this.logout().then(() => {
@@ -49,12 +48,6 @@ export class AuthService {
                 resolve(null);
               });
             }
-          } else {
-            this.logout().then(() => {
-              this.account$.next(null);
-              resolve(null);
-            });
-          }
         });
     });
   }

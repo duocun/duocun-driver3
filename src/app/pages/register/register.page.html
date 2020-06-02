@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/login" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title translate="Register"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container container-sm">
+    <form class="ion-padding">
+      <ion-list lines="full">
+        <ion-item>
+          <ion-label position="stacked" translate="Username"></ion-label>
+          <ion-input required type="text" name="username" autocomplete="off" autofocus="true"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked" translate="Password"></ion-label>
+          <ion-input required type="password" name="password" autocomplete="off" autofocus="true"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked" translate="Password Confirm"></ion-label>
+          <ion-input required type="password" name="password-confirm" autocomplete="off" autofocus="true"></ion-input>
+        </ion-item>
+      </ion-list>
+      <div class="ion-margin-top">
+        <ion-button expand="full" type="submit" translate="Register"></ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>
